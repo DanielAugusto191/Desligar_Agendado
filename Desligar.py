@@ -137,7 +137,7 @@ def main():
     onOff = [] # Ver o estado dos checkbuttons
     Cb_Apps = [] # Vai armazenar os checkbuttons
     for x in range(len(Apps)):
-        onOff.append(0)
+        onOff.append(BooleanVar())
         Cb_Apps.append(Checkbutton(Lf_fecharProgramas, text=Apps[x], onvalue=1, offvalue=0, variable=onOff[x]))
     linha = 1
     coluna = 0
